@@ -3,11 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <title>My Library</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 </head>
 <body>
-    
+    <div class="header">
+        <div class="title"><i class="bi bi-book"></i>Library</div>
+        <div>
+            <button class="btnNewBook" id="showDialog">New book</button>
+        </div>
+    </div>
+    <dialog id="newBook">
+        <form action="#" method="dialog">
+            <header><h1>
+                Add the book details!!
+            </h1></header>
+            <div class="formStyle">
+                <label for="bookTitle">Book Title</label>
+                <input type="text" name="book_title" id="title">
+            </div>
+            <div class="formStyle">
+                <label for="bookAuthor">Author Name</label>
+                <input type="text" name="book_author" id="author">
+            </div>
+            <div class="formStyle">
+                <label for="bookPages">Book Pages</label>
+                <input type="text" name="book_pages" id="pages">
+            </div>
+            <div class="formStyle">
+                <label for="read_book">Have you read this book?</label>
+                <select name="read_book" id="read_book">
+                    <option value="read">read</option>
+                    <option value="not_read">not read</option>
+                </select>
+            </div>
+            <div class="formButtons">
+                <button type="submit" id="addBook">Add</button>
+                <button id="closeDialog">close</button>
+            </div>
+        </form>
+    </dialog>
+    <div id="library-container"></div>
 </body>
 </html>

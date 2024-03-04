@@ -14,3 +14,105 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: #083344;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+}
+
+.title{
+    display: flex;
+    font-size: 80px;
+}
+
+.btnNewBook{
+    padding: 5px;
+    border-radius: 12px;
+    background-color: #312e81;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+}
+
+.btnNewBook:hover{
+    width: 130px;
+    font-weight: bolder;
+    background-color: #1e1b4b;
+}
+
+#library-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.book-card {
+    background-image: linear-gradient(rgb(37, 121, 114),rgb(68, 20, 179));
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    min-width: 30px;
+    float: left;
+}
+
+#newBook{
+    padding: 2rem;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+
+dialog[open] {
+    display: flex;
+    margin: auto;
+    border: none;
+    border-radius: 15px;
+}
+
+.formStyle{
+    display: flex;
+    font-weight: bold;
+    color: #083344;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.formButtons{
+    display: flex;
+    justify-content: center;
+}
+
+.formButtons > button{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.formButtons > button:hover{
+    background-color: #083344;
+    color: white;
+}
