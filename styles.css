@@ -116,3 +116,12 @@ dialog[open] {
     background-color: #083344;
     color: white;
 }
+
+.readToggle{
+    padding: 3px;
+}
+
+.readToggle:hover{
+    border: 1px solid #888;
+    background-color: #ddd;
+}
