@@ -119,9 +119,24 @@ dialog[open] {
 
 .readToggle{
     padding: 3px;
+    border-radius: 15px;
+    padding: 5px;
 }
 
 .readToggle:hover{
     border: 1px solid #888;
     background-color: #ddd;
+    font-weight: bold;
+}
+
+.removeButton{
+    padding: 3px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.removeButton:hover{
+    border: 1px solid #888;
+    background-color: #ddd;
+    font-weight: bold;
 }
