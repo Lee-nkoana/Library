@@ -15,9 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         myLibrary.push(book);
     }
 
-    const book1 = new Book("LOTDR", "J.R.Tollkin", "123", "read");
-    addBookToLibrary(book1);
-
     const libraryContainer = document.getElementById("library-container");
 
     // Function to render all books in the library
